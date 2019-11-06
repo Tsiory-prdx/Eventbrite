@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>
+    Salut <%= @user.first_name %>, nous sommes heureux de vous dire que vous etes invités a l'evenement <%= @event.title %> !
+    </h1>
+    <p>
+      Tu t'es inscrit sur Eventbrite.mg en utilisant l'e-mail suivant : <%= @user.email %>.
+    </p>
+    <p>
+      Donc, on vous envoie ce mail pour vous prevenir qu'un evenement du nom de <%= @event.title %> <%= @event.description %> aura lieu à <%= @event.location %>
+ le <%= @event.start_date %>, l'event durera <%= @event.duration %> minutes et le prix d'entrée est de <%= @event.price %> euro.
+    </p>
+    <p> 
+    Au plaisir de vous revoir au super #<%= @event.title %>!!!!!!!!
+    </p>
+  </body>
+</html>
